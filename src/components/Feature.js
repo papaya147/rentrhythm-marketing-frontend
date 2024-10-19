@@ -21,8 +21,6 @@ const Feature = ({ title, para }) => {
   return (
     <Card
       sx={{
-        width: isVhGreaterThanVw ? "90vw" : "35vw",
-        height: isVhGreaterThanVw ? "25vh" : "20vh",
         margin: 2,
         backgroundColor: "rgba(255, 255, 255, 0.8)",
         display: "flex",

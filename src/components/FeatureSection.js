@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
 import Feature from "./Feature";
 import { Carousel } from "primereact/carousel";
 
 const data = [
   {
     title: "Rent Management",
-    para: "Setup scheduled payment expectations and reminders & monitor transfers",
+    para: "Setup scheduled payment expectations and reminders & monitor transfers.",
   },
   {
     title: "Services Catalogue",
@@ -25,7 +24,7 @@ const data = [
   },
   {
     title: "Tax Reports and Lease Renewals",
-    para: "Keep track of official matters in an organised manner",
+    para: "Keep track of official matters in an organised manner.",
   },
 ];
 
@@ -34,22 +33,6 @@ const featureTemplate = (feature) => {
 };
 
 const FeatureSection = () => {
-  const [isVhGreaterThanVw, setIsVhGreaterThanVw] = useState(false);
-
-  useEffect(() => {
-    const checkViewport = () => {
-      const vh = window.innerHeight;
-      const vw = window.innerWidth;
-      setIsVhGreaterThanVw(vh > vw);
-    };
-
-    checkViewport();
-
-    window.addEventListener("resize", checkViewport);
-
-    return () => window.removeEventListener("resize", checkViewport);
-  }, [isVhGreaterThanVw]);
-
   return (
     <Carousel
       value={data}

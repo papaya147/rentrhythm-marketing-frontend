@@ -5,6 +5,7 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { useEffect, useState } from "react";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [isVhGreaterThanVw, setIsVhGreaterThanVw] = useState(false);
@@ -52,11 +53,12 @@ const App = () => {
       </Box>
       <Box
         sx={{
+          marginTop: "5vh",
           position: "absolute",
           left: isVhGreaterThanVw ? "0" : "60vw",
           top: isVhGreaterThanVw ? "50vh" : "0",
           width: isVhGreaterThanVw ? "100vw" : "40vw",
-          height: isVhGreaterThanVw ? "50vh" : "100vh",
+          height: isVhGreaterThanVw ? "55vh" : "95vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -64,6 +66,7 @@ const App = () => {
         }}
       >
         <FeatureSection />
+        <Contact />
       </Box>
     </Box>
   );
