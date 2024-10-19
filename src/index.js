@@ -9,18 +9,23 @@ const theme = createTheme({
     fontFamily: "Epilogue, sans-serif",
     h1: {
       fontFamily: "Montserrat, sans-serif",
+      fontWeight: "bold",
     },
     h2: {
       fontFamily: "Montserrat, sans-serif",
+      fontWeight: "bold",
     },
     h3: {
       fontFamily: "Montserrat, sans-serif",
+      fontWeight: "bold",
     },
     h4: {
       fontFamily: "Montserrat, sans-serif",
+      fontWeight: "bold",
     },
     h5: {
       fontFamily: "Montserrat, sans-serif",
+      fontWeight: "bold",
     },
     button: {
       fontFamily: "Montserrat, sans-serif",
